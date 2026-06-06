@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Card from "../Ui/card";
 import MyImg from "@/public/assets/images/gallery/image-1.jpg";
-import { cn } from "@/lib/utils";
 
 export default function MeCard() {
   return (

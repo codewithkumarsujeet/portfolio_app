@@ -60,17 +60,17 @@ export default function SvgCurve() {
 
   useEffect(() => {
     setPath(progress);
-
+  
     const handleResize = () => {
       setPath(progress);
     };
-
+  
     window.addEventListener("resize", handleResize);
-
+  
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [progress]);
+  }, []);
 
   return (
     <div className="line">
